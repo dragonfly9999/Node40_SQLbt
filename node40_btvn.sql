@@ -438,7 +438,7 @@ GROUP BY u.user_id, u.full_name
 ORDER BY num_orders DESC
 LIMIT 1;
 
--- Tìm người không hoạt động trong hệ thống(không đặt hàng, không like, không đánh giá nhà hàng:
+-- Tìm người không hoạt động trong hệ thống(không đặt hàng, không like, không đánh giá nhà hàng):
 SELECT u.user_id, u.full_name, u.email
 FROM users u
 LEFT JOIN orders o ON u.user_id = o.user_id
